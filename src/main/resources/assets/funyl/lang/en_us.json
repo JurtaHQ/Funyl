@@ -1,0 +1,19 @@
+{
+	"item.funyl.semenite": "Semenite",
+	
+	"item.funyl.semenite_sword": "Semenite Sword",
+	"item.funyl.semenite_pickaxe": "Semenite Pickaxe",
+	"item.funyl.semenite_shovel": "Semenite Shovel",
+	"item.funyl.semenite_axe": "Semenite Axe",
+	"item.funyl.semenite_hoe": "Semenite Hoe",
+	
+	"item.funyl.semenite_helmet": "Semenite Helmet",
+	"item.funyl.semenite_chestplate": "Semenite Chestplate",
+	"item.funyl.semenite_leggings": "Semenite Leggings",
+	"item.funyl.semenite_boots": "Semenite Boots",
+	
+	"block.funyl.semenite_ore": "Semenite Ore",
+	"block.funyl.semenite_block": "Semenite Block",
+	
+	"itemGroup.funyl": "Funyl"
+}

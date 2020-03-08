@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "funyl:semenite_ore"
+  },
+  "result": "funyl:semenite",
+  "experience": 1.5,
+  "cookingtime": 200
+}
