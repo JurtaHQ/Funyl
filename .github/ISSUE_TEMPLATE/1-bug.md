@@ -2,7 +2,7 @@
 name: Bug
 about: For bugs that occur when Funyl is installed.
 title: ''
-labels: 'minor-bug' 'major-bug'
+labels: minor-bug, major-bug
 assignees: ''
 
 ---
