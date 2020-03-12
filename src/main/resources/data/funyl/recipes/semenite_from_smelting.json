@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smelting",
   "ingredient": {
-    "item": "funyl:semenite_ore"
+    "item": "funyl:nether_semenite_ore"
   },
   "result": "funyl:semenite",
   "experience": 1.5,
