@@ -14,7 +14,7 @@ public abstract class FunylItemGroup extends ItemGroup {
 	public static final ItemGroup FUNYL = (new ItemGroup(ItemGroup.GROUPS.length, "funyl") {
 		@OnlyIn(Dist.CLIENT)
 		public ItemStack createIcon() {
-			return new ItemStack(ItemInit.SEMENITE);
+			return new ItemStack(ItemInit.SEMENITE.get());
 		}
 	}).setTabPath("funyl");
 }

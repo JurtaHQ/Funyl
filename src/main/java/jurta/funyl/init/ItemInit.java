@@ -20,52 +20,29 @@ import net.minecraft.util.SoundEvent;
 import net.minecraft.util.SoundEvents;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.event.RegistryEvent;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus;
-import net.minecraftforge.registries.ObjectHolder;
+import net.minecraftforge.fml.RegistryObject;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.ForgeRegistries;
 
-@Mod.EventBusSubscriber(modid = Funyl.MOD_ID, bus = Bus.MOD)
-@ObjectHolder(Funyl.MOD_ID)
 public class ItemInit {
-	public static final Item SEMENITE = null;
-	
-	//Tools
-	public static final Item SEMENITE_SWORD = null;
-	public static final Item SEMENITE_PICKAXE = null;
-	public static final Item SEMENITE_SHOVEL = null;
-	public static final Item SEMENITE_AXE = null;
-	public static final Item SEMENITE_HOE = null;
-	
-	//Armour
-	public static final Item SEMENITE_HELMET = null;
-	public static final Item SEMENITE_CHESTPLATE = null;
-	public static final Item SEMENITE_LEGGINGS = null;
-	public static final Item SEMENITE_BOOTS = null;
-	
-	@SubscribeEvent
-	public static void registerItems(final RegistryEvent.Register<Item> event) {
-		event.getRegistry().register(new Item(new Item.Properties().group(FunylItemGroup.FUNYL)).setRegistryName("semenite"));
-		
-		//Tools
-		event.getRegistry().register(new SwordItem(ModItemTier.SEMENITE, 8, 1.6f, new Item.Properties().group(FunylItemGroup.FUNYL)).setRegistryName("semenite_sword"));
-		event.getRegistry().register(new PickaxeItem(ModItemTier.SEMENITE, 6, 1.6f, new Item.Properties().group(FunylItemGroup.FUNYL)).setRegistryName("semenite_pickaxe"));
-		event.getRegistry().register(new ShovelItem(ModItemTier.SEMENITE, 6.0f, 1.0f, new Item.Properties().group(FunylItemGroup.FUNYL)).setRegistryName("semenite_shovel"));
-		event.getRegistry().register(new AxeItem(ModItemTier.SEMENITE, 10.0f, 1.0f, new Item.Properties().group(FunylItemGroup.FUNYL)).setRegistryName("semenite_axe"));
-		event.getRegistry().register(new HoeItem(ModItemTier.SEMENITE, 4.0f, new Item.Properties().group(FunylItemGroup.FUNYL)).setRegistryName("semenite_hoe"));
-		
-		//Armour
-		event.getRegistry().register(new ArmorItem(ModArmorMaterial.SEMENITE, EquipmentSlotType.HEAD, new Item.Properties().group(FunylItemGroup.FUNYL)).setRegistryName("semenite_helmet"));
-		event.getRegistry().register(new ArmorItem(ModArmorMaterial.SEMENITE, EquipmentSlotType.CHEST, new Item.Properties().group(FunylItemGroup.FUNYL)).setRegistryName("semenite_chestplate"));
-		event.getRegistry().register(new ArmorItem(ModArmorMaterial.SEMENITE, EquipmentSlotType.LEGS, new Item.Properties().group(FunylItemGroup.FUNYL)).setRegistryName("semenite_leggings"));
-		event.getRegistry().register(new ArmorItem(ModArmorMaterial.SEMENITE, EquipmentSlotType.FEET, new Item.Properties().group(FunylItemGroup.FUNYL)).setRegistryName("semenite_boots"));
+	public static final DeferredRegister<Item> ITEMS = new DeferredRegister<>(ForgeRegistries.ITEMS, Funyl.MOD_ID);
 
-	}
+	public static final RegistryObject<Item> SEMENITE = ITEMS.register("semenite", () -> new Item(new Item.Properties().group(FunylItemGroup.FUNYL)));
+
+	public static final RegistryObject<Item> SEMENITE_SWORD = ITEMS.register("semenite_sword", () -> new SwordItem(ModItemTier.SEMENITE, 8, 1.6f, new Item.Properties().group(FunylItemGroup.FUNYL)));
+	public static final RegistryObject<Item> SEMENITE_PICKAXE = ITEMS.register("semenite_pickaxe", () -> new PickaxeItem(ModItemTier.SEMENITE, 6, 1.6f, new Item.Properties().group(FunylItemGroup.FUNYL)));
+	public static final RegistryObject<Item> SEMENITE_SHOVEL = ITEMS.register("semenite_shovel", () -> new ShovelItem(ModItemTier.SEMENITE, 6.0f, 1.0f, new Item.Properties().group(FunylItemGroup.FUNYL)));
+	public static final RegistryObject<Item> SEMENITE_AXE = ITEMS.register("semenite_axe", () -> new AxeItem(ModItemTier.SEMENITE, 10.0f, 1.0f, new Item.Properties().group(FunylItemGroup.FUNYL)));
+	public static final RegistryObject<Item> SEMENITE_HOE = ITEMS.register("semenite_hoe", () -> new HoeItem(ModItemTier.SEMENITE, 4.0f, new Item.Properties().group(FunylItemGroup.FUNYL)));
+
+	public static final RegistryObject<Item> SEMENITE_HELMET = ITEMS.register("semenite_helmet", () -> new ArmorItem(ModArmorMaterial.SEMENITE, EquipmentSlotType.HEAD, new Item.Properties().group(FunylItemGroup.FUNYL)));
+	public static final RegistryObject<Item> SEMENITE_CHESTPLATE = ITEMS.register("semenite_chestplate", () -> new ArmorItem(ModArmorMaterial.SEMENITE, EquipmentSlotType.CHEST, new Item.Properties().group(FunylItemGroup.FUNYL)));
+	public static final RegistryObject<Item> SEMENITE_LEGGINGS = ITEMS.register("semenite_leggings", () -> new ArmorItem(ModArmorMaterial.SEMENITE, EquipmentSlotType.LEGS, new Item.Properties().group(FunylItemGroup.FUNYL)));
+	public static final RegistryObject<Item> SEMENITE_BOOTS = ITEMS.register("semenite_boots", () -> new ArmorItem(ModArmorMaterial.SEMENITE, EquipmentSlotType.FEET, new Item.Properties().group(FunylItemGroup.FUNYL)));
 	
 	public enum ModItemTier implements IItemTier {
 		SEMENITE(4, 1827, 9.0f, 4.0f, 12, () -> {
-			return Ingredient.fromItems(ItemInit.SEMENITE);
+			return Ingredient.fromItems(ItemInit.SEMENITE.get());
 		});
 		
 		private final int harvestLevel;
@@ -117,7 +94,7 @@ public class ItemInit {
 	
 	public enum ModArmorMaterial implements IArmorMaterial {
 		SEMENITE(Funyl.MOD_ID + ":semenite", 42, new int[]{4, 8, 9, 5}, 12, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 3.0F, () -> {
-			return Ingredient.fromItems(ItemInit.SEMENITE);
+			return Ingredient.fromItems(ItemInit.SEMENITE.get());
 		});
 		
 		private static final int[] MAX_DAMAGE_ARRAY = new int[] {16, 16, 16, 16};
