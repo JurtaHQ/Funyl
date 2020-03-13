@@ -14,7 +14,7 @@ public class FunylOreGen {
 	public static void generateOre() {
 		for (Biome biome : ForgeRegistries.BIOMES) {
 			ConfiguredPlacement<?> customConfig = Placement.COUNT_RANGE
-					.configure(new CountRangeConfig(2, 0, 0, 255));
+					.configure(new CountRangeConfig(8, 0, 0, 255));
 			biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE
 					.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NETHERRACK, BlockInit.NETHER_SEMENITE_ORE.get().getDefaultState(), 6))
 					.withPlacement(customConfig));
