@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:semenite_block"
+          "name": "funyl:semenite_block"
         }
       ],
       "conditions": [
