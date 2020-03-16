@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_column",
+    "textures": {
+        "end": "funyl:block/cedar_log_top",
+        "side": "funyl:block/cedar_log"
+    }
+}

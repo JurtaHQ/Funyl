@@ -3,7 +3,7 @@ package jurta.funyl.init;
 import java.util.function.Supplier;
 
 import jurta.funyl.Funyl;
-import jurta.funyl.objects.items.FunylItemGroup;
+import jurta.funyl.item.FunylItemGroup;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.AxeItem;
@@ -39,6 +39,8 @@ public class ItemInit {
 	public static final RegistryObject<Item> SEMENITE_CHESTPLATE = ITEMS.register("semenite_chestplate", () -> new ArmorItem(ModArmorMaterial.SEMENITE, EquipmentSlotType.CHEST, new Item.Properties().group(FunylItemGroup.FUNYL)));
 	public static final RegistryObject<Item> SEMENITE_LEGGINGS = ITEMS.register("semenite_leggings", () -> new ArmorItem(ModArmorMaterial.SEMENITE, EquipmentSlotType.LEGS, new Item.Properties().group(FunylItemGroup.FUNYL)));
 	public static final RegistryObject<Item> SEMENITE_BOOTS = ITEMS.register("semenite_boots", () -> new ArmorItem(ModArmorMaterial.SEMENITE, EquipmentSlotType.FEET, new Item.Properties().group(FunylItemGroup.FUNYL)));
+	
+	public static final RegistryObject<Item> BEAMSTONE = ITEMS.register("beamstone", () -> new Item(new Item.Properties().group(FunylItemGroup.FUNYL)));
 	
 	public enum ModItemTier implements IItemTier {
 		SEMENITE(4, 1827, 9.0f, 4.0f, 12, () -> {

@@ -12,8 +12,17 @@
 	"item.funyl.semenite_leggings": "Semenite Leggings",
 	"item.funyl.semenite_boots": "Semenite Boots",
 	
+	"item.funyl.beamstone": "Beamstone",
+	
 	"block.funyl.nether_semenite_ore": "Nether Semenite Ore",
 	"block.funyl.semenite_block": "Semenite Block",
+	
+	"block.funyl.end_beamstone_ore": "End Beamstone Ore",
+	"block.funyl.beamstone_block": "Beamstone Block",
+	
+	"block.funyl.cedar_log": "Cedar Log",
+	"block.funyl.cedar_planks": "Cedar Planks",
+	"block.funyl.cedar_leaves": "Cedar Leaves",
 	
 	"itemGroup.funyl": "Funyl"
 }

@@ -2,7 +2,7 @@ package jurta.funyl;
 
 import jurta.funyl.init.BlockInit;
 import jurta.funyl.init.ItemInit;
-import jurta.funyl.objects.items.FunylItemGroup;
+import jurta.funyl.item.FunylItemGroup;
 import jurta.funyl.world.gen.FunylOreGen;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;

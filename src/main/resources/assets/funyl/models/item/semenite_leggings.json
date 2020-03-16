@@ -1,6 +1,6 @@
 {
 	"parent": "item/generated",
 	"textures": {
-		"layer0": "funyl:items/semenite_leggings"
+		"layer0": "funyl:item/semenite_leggings"
 	}
 }

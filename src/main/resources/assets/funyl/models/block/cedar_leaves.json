@@ -1,0 +1,6 @@
+{
+    "parent": "block/leaves",
+    "textures": {
+        "all": "funyl:block/cedar_leaves"
+    }
+}

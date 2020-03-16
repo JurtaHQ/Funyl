@@ -1,0 +1,5 @@
+{
+    "variants": {
+        "": { "model": "funyl:block/beamstone_block" }
+    }
+}

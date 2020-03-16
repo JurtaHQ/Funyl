@@ -1,6 +1,6 @@
 {
     "parent": "block/cube_all",
     "textures": {
-        "all": "funyl:block/nether_semenite_ore"
+        "all": "funyl:block/beamstone_block"
     }
 }

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "funyl:end_beamstone_ore"
+  },
+  "result": "funyl:beamstone",
+  "experience": 1.5,
+  "cookingtime": 100
+}

@@ -1,4 +1,4 @@
-package jurta.funyl.objects.items;
+package jurta.funyl.item;
 
 import jurta.funyl.init.ItemInit;
 import net.minecraft.item.ItemGroup;

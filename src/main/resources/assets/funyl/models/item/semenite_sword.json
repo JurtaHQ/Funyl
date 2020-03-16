@@ -1,6 +1,6 @@
 {
     "parent": "item/handheld",
     "textures": {
-        "layer0": "funyl:items/semenite_sword"
+        "layer0": "funyl:item/semenite_sword"
     }
 }
