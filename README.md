@@ -1,4 +1,4 @@
-<p><img src="https://i.imgur.com/SPcNEjw.png" alt="Funyl Logo" width="326" height="97" /></span></p>
+<p><img src="https://i.imgur.com/T6Wteq8.png" alt="Funyl Logo" width="326" height="97" /></span></p>
 <p><span style="font-family: arial, helvetica, sans-serif; font-size: 14px;"><b>Funyl</b> is some random mod that adds stuff... and that's it.</span></p>
 
 -----------------
