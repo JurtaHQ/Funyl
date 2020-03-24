@@ -24,4 +24,7 @@ public class BlockInit {
 	public static final RegistryObject<Block> CEDAR_LOG = BLOCKS.register("cedar_log", () -> new LogBlock(MaterialColor.WOOD, Block.Properties.create(Material.WOOD).hardnessAndResistance(2.0f, 2.0f).sound(SoundType.WOOD).harvestLevel(0).harvestTool(ToolType.AXE)));
 	public static final RegistryObject<Block> CEDAR_PLANKS = BLOCKS.register("cedar_planks", () -> new Block(Block.Properties.create(Material.WOOD).hardnessAndResistance(2.0f, 3.0f).sound(SoundType.WOOD).harvestLevel(0).harvestTool(ToolType.AXE)));
 	public static final RegistryObject<Block> CEDAR_LEAVES = BLOCKS.register("cedar_leaves", () -> new LeavesBlock(Block.Properties.create(Material.LEAVES).hardnessAndResistance(0.2f).sound(SoundType.PLANT).tickRandomly().sound(SoundType.PLANT).notSolid()));
+	
+	public static final RegistryObject<Block> GROMAR_ORE = BLOCKS.register("gromar_ore", () -> new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(2.0f, 3.0f).sound(SoundType.STONE).harvestLevel(0).harvestTool(ToolType.PICKAXE)));
+	public static final RegistryObject<Block> GROMAR_PLANKS = BLOCKS.register("gromar_planks", () -> new Block(Block.Properties.create(Material.WOOD).hardnessAndResistance(2.0f, 3.0f).sound(SoundType.WOOD).harvestLevel(0).harvestTool(ToolType.AXE)));
 }

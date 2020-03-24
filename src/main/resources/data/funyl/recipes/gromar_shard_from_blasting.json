@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "funyl:gromar_ore"
+  },
+  "result": "funyl:gromar_shard",
+  "experience": 0.5,
+  "cookingtime": 100
+}

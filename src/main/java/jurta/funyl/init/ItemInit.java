@@ -29,11 +29,11 @@ public class ItemInit {
 
 	public static final RegistryObject<Item> SEMENITE = ITEMS.register("semenite", () -> new Item(new Item.Properties().group(FunylItemGroup.FUNYL)));
 
-	public static final RegistryObject<Item> SEMENITE_SWORD = ITEMS.register("semenite_sword", () -> new SwordItem(ModItemTier.SEMENITE, 8, 1.6f, new Item.Properties().group(FunylItemGroup.FUNYL)));
-	public static final RegistryObject<Item> SEMENITE_PICKAXE = ITEMS.register("semenite_pickaxe", () -> new PickaxeItem(ModItemTier.SEMENITE, 6, 1.6f, new Item.Properties().group(FunylItemGroup.FUNYL)));
-	public static final RegistryObject<Item> SEMENITE_SHOVEL = ITEMS.register("semenite_shovel", () -> new ShovelItem(ModItemTier.SEMENITE, 6.0f, 1.0f, new Item.Properties().group(FunylItemGroup.FUNYL)));
-	public static final RegistryObject<Item> SEMENITE_AXE = ITEMS.register("semenite_axe", () -> new AxeItem(ModItemTier.SEMENITE, 10.0f, 1.0f, new Item.Properties().group(FunylItemGroup.FUNYL)));
-	public static final RegistryObject<Item> SEMENITE_HOE = ITEMS.register("semenite_hoe", () -> new HoeItem(ModItemTier.SEMENITE, 4.0f, new Item.Properties().group(FunylItemGroup.FUNYL)));
+	public static final RegistryObject<Item> SEMENITE_SWORD = ITEMS.register("semenite_sword", () -> new SwordItem(ModItemTier.SEMENITE, 10, 2.0f, new Item.Properties().group(FunylItemGroup.FUNYL)));
+	public static final RegistryObject<Item> SEMENITE_PICKAXE = ITEMS.register("semenite_pickaxe", () -> new PickaxeItem(ModItemTier.SEMENITE, 8, 2.0f, new Item.Properties().group(FunylItemGroup.FUNYL)));
+	public static final RegistryObject<Item> SEMENITE_SHOVEL = ITEMS.register("semenite_shovel", () -> new ShovelItem(ModItemTier.SEMENITE, 8.5f, 1.2f, new Item.Properties().group(FunylItemGroup.FUNYL)));
+	public static final RegistryObject<Item> SEMENITE_AXE = ITEMS.register("semenite_axe", () -> new AxeItem(ModItemTier.SEMENITE, 12.5f, 1.2f, new Item.Properties().group(FunylItemGroup.FUNYL)));
+	public static final RegistryObject<Item> SEMENITE_HOE = ITEMS.register("semenite_hoe", () -> new HoeItem(ModItemTier.SEMENITE, 6.0f, new Item.Properties().group(FunylItemGroup.FUNYL)));
 
 	public static final RegistryObject<Item> SEMENITE_HELMET = ITEMS.register("semenite_helmet", () -> new ArmorItem(ModArmorMaterial.SEMENITE, EquipmentSlotType.HEAD, new Item.Properties().group(FunylItemGroup.FUNYL)));
 	public static final RegistryObject<Item> SEMENITE_CHESTPLATE = ITEMS.register("semenite_chestplate", () -> new ArmorItem(ModArmorMaterial.SEMENITE, EquipmentSlotType.CHEST, new Item.Properties().group(FunylItemGroup.FUNYL)));
@@ -42,8 +42,10 @@ public class ItemInit {
 	
 	public static final RegistryObject<Item> BEAMSTONE = ITEMS.register("beamstone", () -> new Item(new Item.Properties().group(FunylItemGroup.FUNYL)));
 	
+	public static final RegistryObject<Item> GROMAR_SHARD = ITEMS.register("gromar_shard", () -> new Item(new Item.Properties().group(FunylItemGroup.FUNYL)));
+	
 	public enum ModItemTier implements IItemTier {
-		SEMENITE(4, 1827, 9.0f, 4.0f, 12, () -> {
+		SEMENITE(4, 3078, 11.5f, 6.0f, 20, () -> {
 			return Ingredient.fromItems(ItemInit.SEMENITE.get());
 		});
 		
@@ -95,7 +97,7 @@ public class ItemInit {
 	}
 	
 	public enum ModArmorMaterial implements IArmorMaterial {
-		SEMENITE(Funyl.MOD_ID + ":semenite", 42, new int[]{4, 8, 9, 5}, 12, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 3.0F, () -> {
+		SEMENITE(Funyl.MOD_ID + ":semenite", 42, new int[]{6, 11, 14, 7}, 12, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 4.0F, () -> {
 			return Ingredient.fromItems(ItemInit.SEMENITE.get());
 		});
 		
